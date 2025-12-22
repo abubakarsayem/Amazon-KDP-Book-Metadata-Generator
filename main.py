@@ -7,17 +7,23 @@ st.header("Amazon KDP Book Metadata Generator")
 st.markdown("<br>", unsafe_allow_html=True)
 
 st.markdown("<p style='font-size:18px; font-weight:700; margin-bottom: 5px;'>Enter Your Gemini API Key</p>", unsafe_allow_html=True)
-gemini_key = st.text_input("", type="password", label_visibility="collapsed")
+gemini_key = st.text_input("", type="password", label_visibility="collapsed", key="gemini_api_key")
 
 # Input Columns
 col1, col2 = st.columns(2)
 with col1:
-    category = st.text_input("Category")
-    book_size = st.selectbox("Book Size", ('6*9 Inch', '8.5*11 Inch'))
+    st.markdown("<p style='font-size:18px; font-weight:700; margin-bottom: 5px;'>Category</p>", unsafe_allow_html=True)
+    category = st.text_input("", label_visibility="collapsed", key="category_input")
+    
+    st.markdown("<p style='font-size:18px; font-weight:700; margin-bottom: 5px;'>Book Size</p>", unsafe_allow_html=True)
+    book_size = st.selectbox("", ('6*9 Inch', '8.5*11 Inch'), label_visibility="collapsed", key="book_size_input")
 
 with col2:
-    total_pages = st.text_input("Total Pages")
-    keywords = st.text_input("Keywords")
+    st.markdown("<p style='font-size:18px; font-weight:700; margin-bottom: 5px;'>Total Pages</p>", unsafe_allow_html=True)
+    total_pages = st.text_input("", label_visibility="collapsed", key="total_pages_input")
+    
+    st.markdown("<p style='font-size:18px; font-weight:700; margin-bottom: 5px;'>Keywords</p>", unsafe_allow_html=True)
+    keywords = st.text_input("", label_visibility="collapsed", key="keywords_input")
 
 st.markdown("<p style='font-size:18px; font-weight:700; margin-bottom: 5px;'>Old Description:</p>", unsafe_allow_html=True)
 old_description_input = st.text_area("", placeholder="Paste your current description here...", height=150, label_visibility="collapsed")
