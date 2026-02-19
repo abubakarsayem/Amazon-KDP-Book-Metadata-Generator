@@ -17,19 +17,20 @@ A Streamlit web application that generates high-converting Amazon KDP book title
 ## How It Works
 - Enter your Gemini API Key
 - Fill in book details:
-    Category
-    Book Size (6×9 or 8.5×11)
-    Total Pages
-    Keywords
-    Old Description
-    Click Generate Title & Description
+    Category,
+    Book Size (6×9 or 8.5×11),
+    Total Pages,
+    Keywords,
+    Old Description,
+    Click Generate Title & Description.
 
 - The app returns:
-- A new SEO-friendly title.
-- A persuasive, professionally written description.
-- The AI rewrites the description in clear paragraphs without HTML or bullet points, making it ready to paste directly into Amazon KDP.
+     A new SEO-friendly title,
+     A persuasive, professionally written description,
+     The AI rewrites the description in clear paragraphs without HTML or bullet points, making it ready to paste directly into Amazon KDP.
 
 ## API Key
 - You need a Google Gemini API Key.
 - Get it from Google AI Studio
 - Paste it into the app before generating content.
+
