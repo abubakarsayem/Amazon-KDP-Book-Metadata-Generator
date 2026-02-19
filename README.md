@@ -1,4 +1,4 @@
-## Amazon KDP Book Metadata Generator
+## Amazon KDP Book Metadata Generator with LLM
 A Streamlit web application that generates high-converting Amazon KDP book titles and descriptions using Google Gemini AI. This tool helps self-publishers, authors, and KDP sellers quickly create SEO-friendly metadata based on their book details.
 
 ## Features
@@ -32,5 +32,6 @@ A Streamlit web application that generates high-converting Amazon KDP book title
 - You need a Google Gemini API Key.
 - Get it from Google AI Studio
 - Paste it into the app before generating content.
+
 
 
